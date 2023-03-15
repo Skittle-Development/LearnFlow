@@ -38,7 +38,7 @@
   </style>
 </head>
 <body>
-  <h1>Vokabelquiz</h1>
+  <h1>Lernquiz - 3. bis 5. Klasse</h1>
   <div id="quiz-container">
     <div id="quiz-question"></div>
     <input type="text" id="quiz-answer">
@@ -48,7 +48,8 @@
   <script>
     const quizData = [
       {
-        question: "Was ist das englische Wort für 'Apfel'?",
+        question: "'Englisch-Quiz'
+        Was ist das englische Wort für 'Apfel'?",
         answer: "apple"
       },
       // Dieser Code gehört https://github.com/Skittle-Development/ 
@@ -71,6 +72,62 @@
         question: "Was ist das englische Wort für 'Haus'?",
         answer: "house"
       }
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Schule'?",
+        answer: "school"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Tisch'?",
+        answer: "table"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Stuhl'?",
+        answer: "chair"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Baum'?",
+        answer: "tree"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Bauernhof'?",
+        answer: "Farm"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Junge'?",
+        answer: "boy"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Mädchen'?",
+        answer: "girl"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Buch'?",
+        answer: "book"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "'Mathe-Quiz'
+        Was ergibt '2+4'?",
+        answer: "6"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ergibt '6-3'?",
+        answer: "3"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ergibt '2x2'?",
+        answer: "4"
+      },
     ];
 // Dieser Code gehört https://github.com/Skittle-Development/ 
     const quizContainer = document.getElementById("quiz-container");
@@ -104,6 +161,7 @@
         quizContainer.innerHTML = `
           <h2>Quiz beendet</h2>
           <p>Du hast ${score} von ${quizData.length} Fragen richtig beantwortet.</p>
+          <p>Mehr Fragen kommen bald. Alle neuen Versionen werden unter https://is.gd/learnflow gepostet.</p>
         `;
       }
     }
