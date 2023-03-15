@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vokabelquiz</title>
+  <style>
+    #quiz-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    #quiz-question {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    #quiz-answer {
+      padding: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    #quiz-submit {
+      padding: 5px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #quiz-score {
+      font-size: 18px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vokabelquiz</h1>
+  <div id="quiz-container">
+    <div id="quiz-question"></div>
+    <input type="text" id="quiz-answer">
+    <button id="quiz-submit">Antworten</button>
+  </div>
+  <div id="quiz-score"></div>
+  <script>
+    const quizData = [
+      {
+        question: "Was ist das englische Wort für 'Apfel'?",
+        answer: "apple"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Hund'?",
+        answer: "dog"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Katze'?",
+        answer: "cat"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Auto'?",
+        answer: "car"
+      },
+      // Dieser Code gehört https://github.com/Skittle-Development/ 
+      {
+        question: "Was ist das englische Wort für 'Haus'?",
+        answer: "house"
+      }
+    ];
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+    const quizContainer = document.getElementById("quiz-container");
+    const quizQuestion = document.getElementById("quiz-question");
+    const quizAnswer = document.getElementById("quiz-answer");
+    const quizSubmit = document.getElementById("quiz-submit");
+    const quizScore = document.getElementById("quiz-score");
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+    let currentQuestion = 0;
+    let score = 0;
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+    function showQuestion() {
+      quizQuestion.textContent = quizData[currentQuestion].question;
+    }
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+    function checkAnswer() {
+      const userAnswer = quizAnswer.value.toLowerCase();
+      const correctAnswer = quizData[currentQuestion].answer.toLowerCase();
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+      if (userAnswer === correctAnswer) {
+        score++;
+        quizScore.textContent = `Punktestand: ${score}`;
+      }
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+      currentQuestion++;
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+      if (currentQuestion < quizData.length) {
+        showQuestion();
+        quizAnswer.value = "";
+      } else {
+        quizContainer.innerHTML = `
+          <h2>Quiz beendet</h2>
+          <p>Du hast ${score} von ${quizData.length} Fragen richtig beantwortet.</p>
+        `;
+      }
+    }
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+    quizSubmit.addEventListener("click", checkAnswer);
+// Dieser Code gehört https://github.com/Skittle-Development/ 
+    showQuestion();
+  </script>
+</body>
+</html>
