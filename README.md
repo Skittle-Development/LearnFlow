@@ -1,4 +1,4 @@
-<h1 align="center">LearnStorm</h1>
+<h1 align="center">LearnFlow</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="Lizenz">
@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://i.ibb.co/Srmdmr8/Learn-Flow-removebg-preview.png" alt="LearnStorm Screenshot">
+  <img src="https://i.ibb.co/Srmdmr8/Learn-Flow-removebg-preview.png" alt="LearnFlow Screenshot">
 </p>
 
 ## Inhaltsverzeichnis
@@ -19,7 +19,7 @@
 
 ## Über
 
-LearnStorm ist eine Open-Source-Lern-App, die Benutzern dabei helfen soll, ihr Wissen und ihre Fähigkeiten zu verschiedenen Themen zu verbessern. Mit LearnStorm können Benutzer auf eine umfangreiche Bibliothek hochwertiger Bildungsinhalte zugreifen, einschließlich interaktiver Kurse, Quizfragen und Übungen.
+LearnFlow ist eine Open-Source-Lern-App, die Benutzern dabei helfen soll, ihr Wissen und ihre Fähigkeiten zu verschiedenen Themen zu verbessern. Mit LearnFlow können Benutzer auf eine umfangreiche Bibliothek hochwertiger Bildungsinhalte zugreifen, einschließlich interaktiver Kurse, Quizfragen und Übungen.
 
 ## Funktionen
 
@@ -31,11 +31,11 @@ LearnStorm ist eine Open-Source-Lern-App, die Benutzern dabei helfen soll, ihr W
 
 ## Mitwirken
 
-Wir begrüßen Beiträge aus der Community, um LearnStorm zu verbessern! Um beizutragen, bitte forken Sie dieses Repository, machen Sie Ihre Änderungen und reichen Sie einen Pull Request ein. Für größere Änderungen öffnen Sie bitte zuerst ein Issue, um zu besprechen, was Sie ändern möchten.
+Wir begrüßen Beiträge aus der Community, um LearnFlow zu verbessern! Um beizutragen, bitte forken Sie dieses Repository, machen Sie Ihre Änderungen und reichen Sie einen Pull Request ein. Für größere Änderungen öffnen Sie bitte zuerst ein Issue, um zu besprechen, was Sie ändern möchten.
 
 ## Credits
 
-Die LearnStorm-App basiert auf der Arbeit von [Skittle-Development](https://github.com/Skittle-Development). Wir möchten ihnen für ihre Beiträge und Unterstützung bei der Realisierung dieses Projekts danken.
+Die LearnFlow-App basiert auf der Arbeit von [Skittle-Development](https://github.com/Skittle-Development). Wir möchten ihnen für ihre Beiträge und Unterstützung bei der Realisierung dieses Projekts danken.
 
 ## Lizenz
 
