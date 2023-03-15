@@ -16,7 +16,7 @@
 - [Mitwirken](#mitwirken)
 - [Credits](#credits)
 - [Lizenz](#lizenz)
-- [Prototyp der Website] (#prototyp)
+- [Prototyp der Website](#prototyp)
 
 ## Über
 
@@ -44,4 +44,4 @@ Dieses Projekt ist lizenziert unter der [MIT-Lizenz](LICENSE).
 
 ## Prototyp der Website
 
-Der (Prototyp der Website) [prototype.html] wurde als Grundlage für LearnFlow-Web erstellt. Ihr könnt es gerne mal euch angucken und sehen, wie unser Projekt vom Anfang an aussah.
+Der [Prototyp der Website](prototype.html) wurde als Grundlage für LearnFlow-Web erstellt. Ihr könnt es gerne mal euch angucken und sehen, wie unser Projekt vom Anfang an aussah.
