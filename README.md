@@ -16,7 +16,7 @@
 - [Mitwirken](#mitwirken)
 - [Credits](#credits)
 - [Lizenz](#lizenz)
-- [Prototyp der Website](#prototyp der website)
+- [Prototyp](#prototyp)
 
 ## Über
 
@@ -42,6 +42,6 @@ Die LearnFlow-App basiert auf der Arbeit von [Skittle-Development](https://githu
 
 Dieses Projekt ist lizenziert unter der [MIT-Lizenz](LICENSE).
 
-## Prototyp der Website
+## Prototyp
 
-Der [Prototyp der Website](prototype.html) wurde als Grundlage für LearnFlow-Web erstellt. Ihr könnt es gerne mal euch angucken und sehen, wie unser Projekt vom Anfang an aussah.
+Der [Prototyp](prototype.html) wurde als Grundlage für LearnFlow-Web erstellt. Ihr könnt es gerne mal euch angucken und sehen, wie unser Projekt vom Anfang an aussah.
