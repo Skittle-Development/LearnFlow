@@ -4,22 +4,22 @@ from wtforms import StringField, PasswordField, IntegerField, SelectField
 from wtforms.validators import InputRequired, Length, Email, EqualTo
 from pydictionary import PyDictionary
 import sqlite3
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secretkey'
 app.config['DATABASE'] = 'vocab.db'
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 dictionary = PyDictionary()
 class RegistrationForm(FlaskForm):
     name = StringField('Name', validators=[InputRequired(), Length(min=4, max=20)])
     email = StringField('Email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=50)])
     password = PasswordField('Password', validators=[InputRequired(), Length(min=8, max=80)])
     confirm_password = PasswordField('Confirm Password', validators=[InputRequired(), EqualTo('password')])
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 class QuizForm(FlaskForm):
     num_words = IntegerField('Number of Words', validators=[InputRequired()])
     difficulty = SelectField('Difficulty', choices=[('easy', 'Easy'), ('medium', 'Medium'), ('hard', 'Hard')], validators=[InputRequired()])
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -39,7 +39,7 @@ def register():
 def login():
     if 'email' in session:
         return redirect(url_for('dashboard'))
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
@@ -54,7 +54,7 @@ def login():
         else:
             flash('Invalid email or password!', 'error')
             return redirect(url_for('login'))
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
     return render_template('login.html')
 @app.route('/logout')
 def logout():
@@ -77,7 +77,7 @@ if form.validate_on_submit():
     session['quiz_index'] = 0
     session['quiz_score'] = 0
     return redirect(url_for('quiz'))
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 return render_template('dashboard.html', form=form)
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
@@ -85,20 +85,20 @@ if 'email' not in session:
 return redirect(url_for('login'))
 if 'quiz_words' not in session or 'quiz_index' not in session:
     return redirect(url_for('dashboard'))
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 words = session['quiz_words']
 index = session['quiz_index']
 score = session['quiz_score']
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 if index >= len(words):
     session.pop('quiz_words', None)
     session.pop('quiz_index', None)
     session.pop('quiz_score', None)
     flash(f'Quiz completed! Score: {score}/{len(words)}', 'success')
     return redirect(url_for('dashboard'))
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 word = words[index]
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 if request.method == 'POST':
     guess = request.form['guess'].strip().lower()
     if guess == word.lower():
@@ -107,11 +107,11 @@ if request.method == 'POST':
         flash('Correct!', 'success')
     else:
         flash(f'Incorrect! The correct answer is "{word}".', 'error')
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
     index += 1
     session['quiz_index'] = index
     return redirect(url_for('quiz'))
-
+# Dieser Code gehört https://github.com/Atombombe321/ 
 return render_template('quiz.html', word=word, index=index+1, total=len(words), score=score)
 if name == 'main':
 app.run(debug=True)
