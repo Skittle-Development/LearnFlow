@@ -1,52 +1,42 @@
 <h1 align="center">LearnStorm</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
-  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs welcome">
-  <img src="https://img.shields.io/github/stars/yourusername/learnstorm?style=social" alt="Stars">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="Lizenz">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="Pull Requests Willkommen">
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/12345678/111111111-11111111-1111-1111-1111-111111111111.png" alt="LearnStorm screenshot">
+  <img src="https://i.ibb.co/Srmdmr8/Learn-Flow-removebg-preview.png" alt="LearnStorm Screenshot">
 </p>
 
-## Table of Contents
+## Inhaltsverzeichnis
 
-- [About](#about)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
+- [Über](#über)
+- [Funktionen](#funktionen)
+- [Mitwirken](#mitwirken)
 - [Credits](#credits)
-- [License](#license)
+- [Lizenz](#lizenz)
 
-## About
+## Über
 
-LearnStorm is an open-source learning app designed to help users enhance their knowledge and skills on a variety of topics. With LearnStorm, users can access a vast library of high-quality educational content, including interactive courses, quizzes, and exercises.
+LearnStorm ist eine Open-Source-Lern-App, die Benutzern dabei helfen soll, ihr Wissen und ihre Fähigkeiten zu verschiedenen Themen zu verbessern. Mit LearnStorm können Benutzer auf eine umfangreiche Bibliothek hochwertiger Bildungsinhalte zugreifen, einschließlich interaktiver Kurse, Quizfragen und Übungen.
 
-## Features
+## Funktionen
 
-- Interactive learning courses
-- Quizzes and exercises to test knowledge
-- Personalized learning recommendations based on user preferences
-- Progress tracking and achievement badges
-- Community forums for discussion and collaboration
+- Interaktive Lernkurse
+- Quizfragen und Übungen zur Überprüfung des Wissens
+- Personalisierte Lernempfehlungen basierend auf den Benutzervorlieben
+- Fortschrittsverfolgung und Leistungsabzeichen
+- Community-Foren für Diskussion und Zusammenarbeit
 
-## Getting Started
+## Mitwirken
 
-To get started with LearnStorm, follow these steps:
-
-1. Clone the repository.
-2. Install the dependencies with `npm install`.
-3. Start the app with `npm start`.
-
-## Contributing
-
-We welcome contributions from the community to help make LearnStorm better! To contribute, please fork this repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+Wir begrüßen Beiträge aus der Community, um LearnStorm zu verbessern! Um beizutragen, bitte forken Sie dieses Repository, machen Sie Ihre Änderungen und reichen Sie einen Pull Request ein. Für größere Änderungen öffnen Sie bitte zuerst ein Issue, um zu besprechen, was Sie ändern möchten.
 
 ## Credits
 
-The LearnStorm app is based on the work of [Skittle-Development](https://github.com/Skittle-Development). We would like to thank them for their contributions and support in making this project possible.
+Die LearnStorm-App basiert auf der Arbeit von [Skittle-Development](https://github.com/Skittle-Development). Wir möchten ihnen für ihre Beiträge und Unterstützung bei der Realisierung dieses Projekts danken.
 
-## License
+## Lizenz
 
-This project is licensed under the [MIT License](LICENSE).
+Dieses Projekt ist lizenziert unter der [MIT-Lizenz](LICENSE).
