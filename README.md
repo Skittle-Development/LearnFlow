@@ -16,7 +16,7 @@
 - [Mitwirken](#mitwirken)
 - [Credits](#credits)
 - [Lizenz](#lizenz)
-- [Prototyp der Website](#prototyp)
+- [Prototyp der Website](#prototyp der website)
 
 ## Über
 
